@@ -1,0 +1,10 @@
+You can use ps -eo comm,etime for example:
+
+$ ps -eo comm,etime | grep httpd
+httpd            5-01:40:22
+This shows the elapsed time since the process was started. Mine is showing 5 days, 1 hr, 40 mins, 22 secs.
+
+And after a restart:
+
+$ ps -eo comm,etime | grep httpd
+httpd                 00:07
