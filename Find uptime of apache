@@ -8,3 +8,11 @@ And after a restart:
 
 $ ps -eo comm,etime | grep httpd
 httpd                 00:07
+
+or
+
+sudo gonit status 
+ -command to identify all the running processes.
+ 
+ Note the pid of the server process you want to stop (eg pid 2000)
+ sudo kill 2000
